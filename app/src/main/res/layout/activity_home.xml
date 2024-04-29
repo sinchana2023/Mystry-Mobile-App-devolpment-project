@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skys"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2D4946"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="Home">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="-105dp"
+            android:padding="16dp"
+            tools:ignore="NotSibling">
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1148dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="53dp"
+            android:fontFamily="casual"
+            android:text="Lets go Local!!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#661B73"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="1332dp"
+            android:layout_height="356dp"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:text="Supporting local isn't just about goods; it's about embracing the heartbeat of your community. From farm-fresh produce to artisanal crafts, choosing locally sourced places isn't just a choice; it's a commitment to preserving heritage, fostering sustainability, and empowering the dreamers and creators who call your neighborhood home."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#9A0839"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_items" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

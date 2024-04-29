@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQS">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/faqs"
+        android:scaleType="centerCrop" />
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2D4946"
+        app:title="HELP DESK"/>
+
+    <!-- Your content views below the toolbar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: What is our app about?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: Our app helps users to achieve XYZ. It provides features such as ABC and XYZ."
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: How do I get started?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="A: To get started, simply follow these steps:"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginBottom="4dp"
+                android:text="- Step 1: Do this"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Step 2: Do that"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: What are the main features of the app?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: The main features include:"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Feature 1: Description"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Feature 2: Description"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: How can I contact support?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: You can contact support by..."
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: Can I request a feature?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: Yes, you can request a feature by..."
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

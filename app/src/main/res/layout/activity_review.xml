@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review"
+    tools:ignore="ExtraText"
+    android:background="@drawable/review1">
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="please share your opinions"
+        android:textColor="@color/DarkBlue"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="115dp" />
+
+    <TextView
+        android:id="@+id/nameofrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="235dp"
+        android:text="Very Disatisfied"
+        android:textColor="#800E93" />
+
+    <RatingBar
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="265dp"
+        android:backgroundTint="#0B0A0A"
+        android:progressBackgroundTint="#786E61"
+        android:progressTint="#ddac17"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginRight="30dp"
+        android:background="#6889A3"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your feedback"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="445dp"
+        android:text="Submit Feedback" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="40dp"
+        android:text="Home" />
+    />
+
+</RelativeLayout>
